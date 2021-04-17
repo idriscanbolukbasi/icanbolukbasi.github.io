@@ -12,19 +12,6 @@
     <!-- HEADER -->
     <header>
       <h1 id="header">NEWS WEB APP</h1>
-    </header>
-    <!-- HEADER -->
-
-    <!-- NAVIGATION -->
-    <nav>
-      <a href="#" class="active"><i class="fa fa-home"></i> HOME</a>
-      <a href="news.html"><i class="fa fa-newspaper-o"></i> NEWS</a>
-      <a href="sports.html"><i class="fa fa-soccer-ball-o"></i> SPORTS</a>
-      <a href="travel.html"><i class="fa fa-plane"></i> TRAVEL</a>
-      <a href="culture.html"><i class="fa fa-camera-retro"></i> CULTURE</a>
-      <a href="more.html"><i class="fa fa-info-circle"></i> MORE</a>
-      <a href="login.html"><i class="fa fa-sign-in"></i> LOGIN</a>
-      &nbsp
       <form
         action="https://www.google.com/search"
         method="get"
@@ -41,7 +28,112 @@
           <i class="fa fa-search"></i>
         </button>
       </form>
+    </header>
+    <!-- HEADER -->
+
+    <!-- NAVIGATION -->
+    <nav>
+      <a href="#" class="active"><i class="fa fa-home"></i> HOME</a>
+      <a href="news.html"><i class="fa fa-newspaper-o"></i> NEWS</a>
+      <a href="sports.html"><i class="fa fa-soccer-ball-o"></i> SPORTS</a>
+      <a href="travel.html"><i class="fa fa-plane"></i> TRAVEL</a>
+      <a href="culture.html"><i class="fa fa-camera-retro"></i> CULTURE</a>
+      <a href="more.html"><i class="fa fa-info-circle"></i> MORE</a>
+      <a href="login.html"><i class="fa fa-sign-in"></i> LOGIN</a>
     </nav>
     <!-- NAVIGATION -->
+
+    <!-- CONTENT -->
+    <div class="main">
+      <div class="left-content">
+        <section>
+          <h2>Home Page</h2>
+        </section>
+        <hr />
+        <article>
+          <a href="news.html"><h3>News</h3></a>
+          <img src="img/instagram.jpg" alt="Instagram Logo" />
+          <input
+            type="checkbox"
+            class="read-more-state"
+            id="read-more-controller"
+          />
+          <div class="read-more-wrap">
+            <h4>
+              Instagram has apologised after a mistake with its algorithm
+              promoted diet content to users with eating disorders.
+            </h4>
+            <p class="read-more-target">
+              The search function in the app automatically recommended terms
+              including “appetite suppressants” and “fasting” to some people.
+              <br />Eating disorder campaigners told the BBC that vulnerable
+              people could be triggered and even relapse.<br />
+              The social media platform said harmful terms have now been
+              removed.<br />
+              A spokesman for Facebook, which owns Instagram, told the BBC it
+              was a “mistake” and the issue was resolved on Monday.<br />
+              “We recently rolled out a new search functionality on Instagram
+              beyond hashtags and usernames, to help you more easily discover
+              and explore content you’re most interested in,” he added.<br />
+              “As part of this new feature, when you tap on the search bar,
+              we’ll suggest topics you may want to search for.<br />
+              “Those suggestions, as well as the search results themselves, are
+              limited to general interests, and weight loss should not have been
+              one of them."
+            </p>
+          </div>
+          <label for="read-more-controller" class="read-more-trigger"></label>
+        </article>
+        <article>
+          <a href="sports.html"><h3>Sports</h3></a>
+          <img src="img/harry-kane.jpg" alt="Harry Kane" />
+          <p>
+            Harry Kane suffered a late injury after scoring twice to rescue a
+            point for Tottenham against Everton at Goodison Park.
+          </p>
+        </article>
+        <article>
+          <a href="travel.html"><h3>Travel</h3></a>
+          <img src="img/cruise-ship.jpg" alt="Cruise Ship" />
+          <p>
+            As cruises are finally starting to hit the high seas after a
+            difficult year filled with cancellations and question marks, many
+            are requiring proof of vaccination against COVID-19 to board.
+          </p>
+        </article>
+        <article>
+          <a href="culture.html"><h3>Culture</h3></a>
+          <img src="img/notre-dame.jpg" alt="Notre Dame Cathedral" />
+          <p>
+            Notre-Dame Cathedral, one of the most iconic landmarks of the French
+            capital, looks peaceful today: the new scaffolding and building
+            cranes that surround it give Parisians and millions around the world
+            cause to celebrate the renewal of the more than 850-year-old
+            monument.
+          </p>
+        </article>
+      </div>
+    </div>
+    <!-- CONTENT -->
+
+    <!-- FOOTER -->
+    <footer>
+      <ul>
+        <li id="left-list">
+          <h2>Who Am I?</h2>
+          <p>
+            HI! My name is İdris Can Bölükbaşı. I'm a computer engineering
+            student in Eskişehir Technical University. If you want to contact me
+            you can use my contact info on the right side.
+          </p>
+        </li>
+        <li id="right-list">
+          <h2>Contact Me</h2>
+          <p><i class="fa fa-phone"></i> +90 545 906 42 73</p>
+          <p><i class="fa fa-envelope"></i> icanbolukbasi@gmail.com</p>
+        </li>
+      </ul>
+    </footer>
+    <!-- FOOTER -->
   </body>
 </html>

@@ -6,18 +6,30 @@
 /* HEADER PART */
 header {
   background-color: deepskyblue;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
 }
 header h1 {
   font-family: "Courier New", Courier, monospace;
-  padding: 1rem;
-  font-size: 3.5rem;
-  text-align: center;
+  font-size: 3rem;
+  text-align: left;
   color: white;
+  width: 100%;
 }
-header h1:hover {
-  color: deepskyblue;
-  background-color: grey;
-  transition: all 1s;
+header form {
+  width: 100%;
+  text-align: right;
+}
+#search-button {
+  padding: 0.35rem;
+  color: grey;
+}
+#search {
+  padding: 0.5rem;
+  align-self: center;
+  border-radius: 5px;
+  border: 0px grey;
 }
 
 /* NAVIGATION PART */
@@ -35,28 +47,114 @@ nav > a {
   padding: 0.5rem;
   font-size: 1.3rem;
   color: white;
+  transition: all 0.5s;
 }
 nav a.active {
   color: deepskyblue;
   background-color: white;
 }
 nav a:hover {
-  transition: all 0.5s;
   background-color: white;
   color: deepskyblue;
 }
-nav > form {
-  align-self: center;
+
+/* CONTENT PART */
+.main {
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
 }
-#search-button {
-  padding: 0.45rem;
+.left-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
-#search {
+section {
+  margin: 1.3rem;
+  text-align: left;
+  font-family: "Courier New", Courier, monospace;
+  color: dimgrey;
+}
+article {
+  margin: 1.3rem;
+}
+article a {
+  text-decoration: none;
+}
+article a h3 {
+  margin-bottom: 1.3rem;
+  color: deepskyblue;
+}
+article img {
+  width: 10rem;
+  transition: all 0.4s;
+}
+article img:hover {
+  width: 15rem;
+}
+.right-content {
+  width: 30%;
+}
+.read-more-wrap h4,
+article p {
+  font-family: "Courier New", Courier, monospace;
+}
+input.read-more-state {
+  display: none;
+}
+p.read-more-target {
+  font-size: 0;
+  max-height: 0;
+  opacity: 0;
+  transition: 0.25s ease;
+}
+input.read-more-state:checked ~ div.read-more-wrap p.read-more-target {
+  font-size: inherit;
+  max-height: 999em;
+  opacity: 1;
+}
+input.read-more-state ~ label.read-more-trigger::before {
+  content: "Show More";
+}
+input.read-more-state:checked ~ label.read-more-trigger::before {
+  content: "Show Less";
+}
+label.read-more-trigger {
+  margin: 0.6rem 0;
+  padding: 0.6rem;
+  cursor: default;
+  display: inline-block;
+  background-color: deepskyblue;
+  color: white;
+  transition: 0.5s ease;
+}
+label.read-more-trigger:hover {
+  background-color: dimgray;
+  color: deepskyblue;
+}
+
+/* FOOTER PART */
+footer {
+  background-color: dimgrey;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  justify-content: center;
+}
+footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+footer ul li {
+  max-width: 30%;
+  margin: 0.5rem;
   padding: 0.5rem;
-  align-self: center;
-  border-radius: 5px;
-  border: 0px grey;
 }
-#search:active {
-  border: 0px;
+/*
+#left-list {
+  flex-basis: 25%;
 }
+#right-list {
+  flex-basis: 25%;
+}*/
