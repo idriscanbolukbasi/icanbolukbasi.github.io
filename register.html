@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Web App | Contact Me</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://use.fontawesome.com/8d769479d7.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <h1 id="header">NEWS WEB APP</h1>
+
+      <form
+        action="https://www.google.com/search"
+        method="get"
+        name="search"
+        target="_blank"
+      >
+        <input
+          type="search"
+          name="q"
+          placeholder="Search on Google..."
+          id="search"
+        />
+        <button type="submit" id="search-button">
+          <i class="fa fa-search"></i>
+        </button>
+      </form>
+    </header>
+    <!-- HEADER -->
+
+    <!-- NAVIGATION -->
+    <nav>
+      <a href="index.html"><i class="fa fa-home"></i> HOME</a>
+      <a href="news.html"><i class="fa fa-newspaper-o"></i> NEWS</a>
+      <a href="sports.html"><i class="fa fa-soccer-ball-o"></i> SPORTS</a>
+      <a href="travel.html"><i class="fa fa-plane"></i> TRAVEL</a>
+      <a href="culture.html"><i class="fa fa-camera-retro"></i> CULTURE</a>
+      <a href="more.html"> <i class="fa fa-info-circle"></i> MORE </a>
+      <a href="login.html"><i class="fa fa-sign-in"></i> LOGIN</a>
+    </nav>
+    <!-- NAVIGATION -->
+
+    <!-- CONTENT -->
+    <div class="main">
+      <div class="container">
+        <section>
+          <h2>Register</h2>
+        </section>
+        <hr />
+        <article>
+          <form
+            action="thanks.html"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+            <label for="name">NAME: </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your Name..."
+              required
+              autofocus
+            />
+            <label for="surname">SURNAME: </label>
+            <input
+              type="text"
+              name="surname"
+              id="surname"
+              placeholder="Your Surname..."
+              required
+            />
+            <label for="email">EMAIL: </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Mail Address"
+              required
+              autofocus
+            />
+            <label for="birthdate">BIRTH DATE: </label>
+            <input type="date" name="birthdate" id="birthdate" />
+            <label for="telephone">TELEPHONE: </label>
+            <input
+              type="tel"
+              name="telephone"
+              id="telephone"
+              placeholder="05XXXXXXXXX"
+              pattern="[0-9]{11}"
+              required
+            />
+            <label for="password">PASSWORD: </label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+            <label for="">GENDER: </label>
+            <div class="radio-wrapper">
+              <div class="radio-option">
+                <label for="male">MALE</label>
+                <input type="radio" name="gender" id="male" value="male" />
+              </div>
+              <div class="radio-option">
+                <label for="female">FEMALE</label>
+                <input type="radio" name="gender" id="female" value="female" />
+              </div>
+            </div>
+            <label for="aboutme">ABOUT YOURSELF: </label>
+            <textarea
+              name="aboutme"
+              id="aboutme"
+              cols="5"
+              rows="10"
+              style="resize: none"
+              required
+            ></textarea>
+            <label for="photo">YOUR PHOTO: </label>
+            <input type="file" name="photo" id="photo" />
+            <label for="">YOUR INTERESTS: </label>
+            <div class="radio-wrapper">
+              <div class="radio-option">
+                <input type="checkbox" name="music" id="music" />
+                <label for="music">MUSIC</label>
+              </div>
+              <div class="radio-option">
+                <input type="checkbox" name="economy" id="economy" />
+                <label for="economy">ECONOMY</label>
+              </div>
+              <div class="radio-option">
+                <input type="checkbox" name="sports" id="sports" />
+                <label for="sports">SPORTS</label>
+              </div>
+              <div class="radio-option">
+                <input type="checkbox" name="culture" id="culture" />
+                <label for="culture">CULTURE</label>
+              </div>
+              <div class="radio-option">
+                <input type="checkbox" name="travel" id="travel" />
+                <label for="travel">TRAVEL</label>
+              </div>
+            </div>
+            <div class="radio-wrapper">
+              <div class="radio-option">
+                <input type="checkbox" name="science" id="science" />
+                <label for="science">SCIENCE</label>
+              </div>
+              <div class="radio-option">
+                <input type="checkbox" name="technology" id="technology" />
+                <label for="technology">TECH</label>
+              </div>
+              <div class="radio-option">
+                <input type="checkbox" name="celebrities" id="celebrities" />
+                <label for="celebrities">CELEBRITIES</label>
+              </div>
+              <div class="radio-option">
+                <input type="checkbox" name="health" id="health" />
+                <label for="health">HEALTH</label>
+              </div>
+              <div class="radio-option">
+                <input type="checkbox" name="food" id="food" />
+                <label for="food">FOOD</label>
+              </div>
+            </div>
+            <input type="reset" value="Reset Values" />
+            <input type="submit" value="Register" />
+          </form>
+        </article>
+      </div>
+    </div>
+    <!-- CONTENT -->
+
+    <!-- FOOTER -->
+    <footer>
+      <ul>
+        <li>
+          <h2>Who Am I?</h2>
+          <p>
+            HI! My name is İdris Can Bölükbaşı. I'm a computer engineering
+            student in Eskişehir Technical University. If you want to contact me
+            you can use my contact info on the right side.
+          </p>
+        </li>
+        <li>
+          <h2>Contact Me</h2>
+          <p><i class="fa fa-phone"></i> +90 545 906 42 73</p>
+          <p><i class="fa fa-envelope"></i> icanbolukbasi@gmail.com</p>
+        </li>
+      </ul>
+    </footer>
+    <!-- FOOTER -->
+  </body>
+</html>

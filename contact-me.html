@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>News Web App | More</title>
+    <title>News Web App | Contact Me</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://use.fontawesome.com/8d769479d7.js"></script>
   </head>
@@ -40,13 +40,13 @@
       <a href="travel.html"><i class="fa fa-plane"></i> TRAVEL</a>
       <a href="culture.html"><i class="fa fa-camera-retro"></i> CULTURE</a>
       <div class="sub-menu">
-        <a href="#" class="active"> <i class="fa fa-info-circle"></i> MORE </a>
+        <a href="more.html"> <i class="fa fa-info-circle"></i> MORE </a>
         <ul>
           <li>
             <a href="about-me.html"><i class="fa fa-user"></i> About Me</a>
           </li>
           <li>
-            <a href="contact-me.html"
+            <a href="#" class="active"
               ><i class="fa fa-envelope"></i> Contact Me</a
             >
           </li>
@@ -60,12 +60,66 @@
     <div class="main">
       <div class="container">
         <section>
-          <h2>More Information</h2>
+          <h2>Contact Me</h2>
         </section>
         <hr />
         <article>
-          <a href="about-me.html"><h3>About Me</h3></a>
-          <a href="contact-me.html"><h3>Contact Me</h3></a>
+          <form action="response.html" method="POST">
+            <label for="name">NAME: </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your Name..."
+              required
+              autofocus
+            />
+            <label for="surname">SURNAME: </label>
+            <input
+              type="text"
+              name="surname"
+              id="surname"
+              placeholder="Your Surname..."
+              required
+            />
+            <label for="telephone">TELEPHONE: </label>
+            <input
+              type="tel"
+              name="telephone"
+              id="telephone"
+              placeholder="05XXXXXXXXX"
+              pattern="[0-9]{11}"
+              required
+            />
+            <label for="issue">ISSUE: </label>
+            <select name="issue" id="issue">
+              <option value="complaint">Complaint</option>
+              <option value="offer">Offer</option>
+            </select>
+            <label for="message">MESSAGE: </label>
+            <textarea
+              name="message"
+              id="message"
+              cols="5"
+              rows="10"
+              style="resize: none"
+              required
+            ></textarea>
+            <input type="submit" value="Send" />
+            <a href="index.html"><i class="fa fa-home"></i></a>
+          </form>
+          <p>
+            You can also contact me wiht my mail address and social media
+            accounts.
+            <br />
+            <a href="mailto:icanbolukbasi@gmail.com">Mail Me</a>
+            <br />
+            <a href="https://www.instagram.com/idriscanbolukbasi/">Instagram</a>
+            <br />
+            <a href="https://www.linkedin.com/in/idriscanbolukbasi/"
+              >LinkedIn</a
+            >
+          </p>
         </article>
       </div>
     </div>

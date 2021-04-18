@@ -12,19 +12,6 @@
     <!-- HEADER -->
     <header>
       <h1 id="header">NEWS WEB APP</h1>
-    </header>
-    <!-- HEADER -->
-
-    <!-- NAVIGATION -->
-    <nav>
-      <a href="index.html"><i class="fa fa-home"></i> HOME</a>
-      <a href="news.html"><i class="fa fa-newspaper-o"></i> NEWS</a>
-      <a href="sports.html"><i class="fa fa-soccer-ball-o"></i> SPORTS</a>
-      <a href="travel.html"><i class="fa fa-plane"></i> TRAVEL</a>
-      <a href="culture.html"><i class="fa fa-camera-retro"></i> CULTURE</a>
-      <a href="more.html"><i class="fa fa-info-circle"></i> MORE</a>
-      <a href="#" class="active"><i class="fa fa-sign-in"></i> LOGIN</a>
-      &nbsp
       <form
         action="https://www.google.com/search"
         method="get"
@@ -41,7 +28,77 @@
           <i class="fa fa-search"></i>
         </button>
       </form>
+    </header>
+    <!-- HEADER -->
+
+    <!-- NAVIGATION -->
+    <nav>
+      <a href="index.html"><i class="fa fa-home"></i> HOME</a>
+      <a href="news.html"><i class="fa fa-newspaper-o"></i> NEWS</a>
+      <a href="sports.html"><i class="fa fa-soccer-ball-o"></i> SPORTS</a>
+      <a href="travel.html"><i class="fa fa-plane"></i> TRAVEL</a>
+      <a href="culture.html"><i class="fa fa-camera-retro"></i> CULTURE</a>
+      <a href="more.html"><i class="fa fa-info-circle"></i> MORE</a>
+      <a href="#" class="active"><i class="fa fa-sign-in"></i> LOGIN</a>
     </nav>
     <!-- NAVIGATION -->
+
+    <!-- CONTENT -->
+    <div class="main">
+      <div class="container">
+        <section>
+          <h2>Login</h2>
+        </section>
+        <hr />
+        <article>
+          <form action="index.html" method="POST">
+            <label for="email">EMAIL: </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Mail Address"
+              required
+              autofocus
+            />
+            <label for="password">PASSWORD: </label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+            <p>
+              Don't you have an account?<a href="register.html"></a>
+                Click here to create one.</a
+              >
+            </p>
+            <input type="submit" value="Send" />
+          </form>
+        </article>
+      </div>
+    </div>
+    <!-- CONTENT -->
+
+    <!-- FOOTER -->
+    <footer>
+      <ul>
+        <li>
+          <h2>Who Am I?</h2>
+          <p>
+            HI! My name is İdris Can Bölükbaşı. I'm a computer engineering
+            student in Eskişehir Technical University. If you want to contact me
+            you can use my contact info on the right side.
+          </p>
+        </li>
+        <li>
+          <h2>Contact Me</h2>
+          <p><i class="fa fa-phone"></i> +90 545 906 42 73</p>
+          <p><i class="fa fa-envelope"></i> icanbolukbasi@gmail.com</p>
+        </li>
+      </ul>
+    </footer>
+    <!-- FOOTER -->
   </body>
 </html>
