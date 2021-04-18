@@ -105,6 +105,7 @@ article {
   margin: 1.3rem;
 }
 article a {
+  color: deepskyblue;
   text-decoration: none;
 }
 article a h3 {
