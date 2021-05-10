@@ -39,6 +39,9 @@ header h1 {
 .search-button {
   border-radius: 0 0.25rem 0.25rem 0;
 }
+.active-dropdown {
+  background-color: white;
+}
 
 /* MAIN */
 .news-image {
@@ -51,10 +54,24 @@ header h1 {
 .banner {
   margin: 1.3rem 0;
 }
+.transparent-image {
+  width: 10rem;
+  opacity: 0.5;
+  transition: all 0.4s;
+}
+.transparent-image:hover {
+  width: 15rem;
+  opacity: 1;
+}
+.article-title {
+  transition: all 0.3s;
+}
+.article-title:hover {
+  font-size: 2.05rem;
+}
 section {
   margin: 1.3rem;
   text-align: left;
-
   color: dimgrey;
 }
 article {
@@ -108,6 +125,7 @@ label.read-more-trigger:hover {
   }
 }
 
+/* FOOTER */
 footer {
   color: white;
 }
@@ -116,5 +134,4 @@ footer {
 }
 .nav-pills .nav-link:hover {
   border: 0.5px solid deepskyblue;
-  color: deepskyblue;
 }

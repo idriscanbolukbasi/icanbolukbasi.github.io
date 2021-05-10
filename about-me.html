@@ -5,98 +5,211 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News Web App | About Me</title>
-    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="responsive-style.css" />
     <script src="https://use.fontawesome.com/8d769479d7.js"></script>
   </head>
-  <body>
+  <body class="bg-main">
     <!-- HEADER -->
-    <header>
-      <h1 id="header">NEWS WEB APP</h1>
-
-      <form
-        action="https://www.google.com/search"
-        method="get"
-        name="search"
-        target="_blank"
-      >
-        <input
-          type="search"
-          name="q"
-          placeholder="Search on Google..."
-          id="search"
-        />
-        <button type="submit" id="search-button">
-          <i class="fa fa-search"></i>
-        </button>
-      </form>
+    <header class="bg-blue">
+      <div class="container">
+        <h1 id="header">NEWS WEB APP</h1>
+      </div>
     </header>
     <!-- HEADER -->
 
     <!-- NAVIGATION -->
-    <nav>
-      <a href="index.html"><i class="fa fa-home"></i> HOME</a>
-      <a href="news.html"><i class="fa fa-newspaper-o"></i> NEWS</a>
-      <a href="sports.html"><i class="fa fa-soccer-ball-o"></i> SPORTS</a>
-      <a href="travel.html"><i class="fa fa-plane"></i> TRAVEL</a>
-      <a href="culture.html"><i class="fa fa-camera-retro"></i> CULTURE</a>
-      <div class="sub-menu">
-        <a href="more.html"> <i class="fa fa-info-circle"></i> MORE </a>
-        <ul>
-          <li>
-            <a href="#" class="active"><i class="fa fa-user"></i> About Me</a>
-          </li>
-          <li>
-            <a href="contact-me.html"
-              ><i class="fa fa-envelope"></i> Contact Me</a
+    <nav class="navbar navbar-expand-lg navbar-light bg-grey">
+      <div class="container">
+        <a class="navbar-brand" href="#">News Web App</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 align-items-center">
+            <li class="nav-item">
+              <a href="#" class="nav-link"><i class="fa fa-home"></i> HOME</a>
+            </li>
+            <li class="nav-item">
+              <a href="news.html" class="nav-link"
+                ><i class="fa fa-newspaper-o"></i> NEWS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="sports.html" class="nav-link"
+                ><i class="fa fa-soccer-ball-o"></i> SPORTS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="travel.html" class="nav-link"
+                ><i class="fa fa-plane"></i> TRAVEL</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="culture.html" class="nav-link"
+                ><i class="fa fa-camera-retro"></i> CULTURE</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="active nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                More
+              </a>
+              <ul
+                class="dropdown-menu bg-grey"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="active-dropdown dropdown-item" href="about-me.html"
+                    ><i class="fa fa-user"></i> About Me</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="contact-me.html"
+                    ><i class="fa fa-phone"></i> Contact Me</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="login.html" class="nav-link"
+                ><i class="fa fa-sign-in"></i> LOGIN</a
+              >
+            </li>
+          </ul>
+          <form
+            class="d-flex"
+            action="https://www.google.com/search"
+            method="get"
+            name="search"
+            target="_blank"
+          >
+            <input
+              class="form-control"
+              type="search"
+              name="q"
+              placeholder="Search on Google..."
+              id="search"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            />
+            <button
+              type="submit"
+              class="btn btn-group-lg btn-secondary search-button"
+              id="button-addon2"
             >
-          </li>
-        </ul>
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
       </div>
-      <a href="login.html"><i class="fa fa-sign-in"></i> LOGIN</a>
     </nav>
     <!-- NAVIGATION -->
 
     <!-- CONTENT -->
-    <div class="main">
-      <div class="container">
-        <section>
-          <h2>About Me</h2>
-        </section>
-        <hr />
-        <article>
-          <img
-            src="img/me.jpg"
-            alt="İdris Can Bölükbaşı"
-            class="transparent-image"
-          />
-          <p>
-            HI! My name is İdris Can Bölükbaşı. I'm a computer engineering
-            student in Eskişehir Technical University. If you want to contact me
-            you can use my contact info on the right side.
-          </p>
-        </article>
-      </div>
+    <div class="container">
+      <section>
+        <h2 class="article-title">About Me</h2>
+      </section>
+      <hr />
+      <article>
+        <img
+          src="img/me.jpg"
+          alt="İdris Can Bölükbaşı"
+          class="transparent-image"
+        />
+        <p>
+          HI! My name is İdris Can Bölükbaşı. I'm a computer engineering student
+          in Eskişehir Technical University. If you want to contact me you can
+          use my contact info on the right side.
+        </p>
+      </article>
     </div>
+
     <!-- CONTENT -->
 
     <!-- FOOTER -->
-    <footer>
-      <ul>
-        <li>
-          <h2>Who Am I?</h2>
-          <p>
+    <footer class="bg-dimgrey">
+      <div class="container p-5">
+        <ul class="nav nav-pills nav-justified pb-3" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#home"
+              type="button"
+              role="tab"
+              aria-controls="home"
+              aria-selected="true"
+            >
+              Who Am I?
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#profile"
+              type="button"
+              role="tab"
+              aria-controls="profile"
+              aria-selected="false"
+            >
+              Contact Me
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="home"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+          >
             HI! My name is İdris Can Bölükbaşı. I'm a computer engineering
             student in Eskişehir Technical University. If you want to contact me
-            you can use my contact info on the right side.
-          </p>
-        </li>
-        <li>
-          <h2>Contact Me</h2>
-          <p><i class="fa fa-phone"></i> +90 545 906 42 73</p>
-          <p><i class="fa fa-envelope"></i> icanbolukbasi@gmail.com</p>
-        </li>
-      </ul>
+            you can use my contact info on the other tab.
+          </div>
+          <div
+            class="tab-pane fade"
+            id="profile"
+            role="tabpanel"
+            aria-labelledby="profile-tab"
+          >
+            <h2>Contact Me</h2>
+            <p><i class="fa fa-phone"></i> +90 545 906 42 73</p>
+            <p><i class="fa fa-envelope"></i> icanbolukbasi@gmail.com</p>
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- FOOTER -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

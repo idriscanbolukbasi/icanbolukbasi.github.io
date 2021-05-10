@@ -5,100 +5,245 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News Web App | News</title>
-    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="responsive-style.css" />
     <script src="https://use.fontawesome.com/8d769479d7.js"></script>
   </head>
-  <body>
+  <body class="bg-main">
     <!-- HEADER -->
-    <header>
-      <h1 id="header">NEWS WEB APP</h1>
-      <form
-        action="https://www.google.com/search"
-        method="get"
-        name="search"
-        target="_blank"
-      >
-        <input
-          type="search"
-          name="q"
-          placeholder="Search on Google..."
-          id="search"
-        />
-        <button type="submit" id="search-button">
-          <i class="fa fa-search"></i>
-        </button>
-      </form>
+    <header class="bg-blue">
+      <div class="container">
+        <h1 id="header">NEWS WEB APP</h1>
+      </div>
     </header>
     <!-- HEADER -->
 
     <!-- NAVIGATION -->
-    <nav>
-      <a href="index.html"><i class="fa fa-home"></i> HOME</a>
-      <a href="#" class="active"><i class="fa fa-newspaper-o"></i> NEWS</a>
-      <a href="sports.html"><i class="fa fa-soccer-ball-o"></i> SPORTS</a>
-      <a href="travel.html"><i class="fa fa-plane"></i> TRAVEL</a>
-      <a href="culture.html"><i class="fa fa-camera-retro"></i> CULTURE</a>
-      <a href="more.html"><i class="fa fa-info-circle"></i> MORE</a>
-      <a href="login.html"><i class="fa fa-sign-in"></i> LOGIN</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-grey">
+      <div class="container">
+        <a class="navbar-brand" href="#">News Web App</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 align-items-center">
+            <li class="nav-item">
+              <a href="#" class="nav-link"
+                ><i class="fa fa-home"></i> HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="news.html" class="active nav-link"
+                ><i class="fa fa-newspaper-o"></i> NEWS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="sports.html" class="nav-link"
+                ><i class="fa fa-soccer-ball-o"></i> SPORTS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="travel.html" class="nav-link"
+                ><i class="fa fa-plane"></i> TRAVEL</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="culture.html" class="nav-link"
+                ><i class="fa fa-camera-retro"></i> CULTURE</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                More
+              </a>
+              <ul
+                class="dropdown-menu bg-grey"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="about-me.html"
+                    ><i class="fa fa-user"></i> About Me</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="contact-me.html"
+                    ><i class="fa fa-phone"></i> Contact Me</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="login.html" class="nav-link"
+                ><i class="fa fa-sign-in"></i> LOGIN</a
+              >
+            </li>
+          </ul>
+          <form
+            class="d-flex"
+            action="https://www.google.com/search"
+            method="get"
+            name="search"
+            target="_blank"
+          >
+            <input
+              class="form-control"
+              type="search"
+              name="q"
+              placeholder="Search on Google..."
+              id="search"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            />
+            <button
+              type="submit"
+              class="btn btn-group-lg btn-secondary search-button"
+              id="button-addon2"
+            >
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
     </nav>
     <!-- NAVIGATION -->
 
     <!-- CONTENT -->
-    <div class="main">
-      <div class="container">
-        <section>
-          <h2>Instagram Fixes Mistake Promoting Harmful Diet Content</h2>
-        </section>
-        <hr />
-        <article>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="banner col-md-3 text-center">
           <img
-            src="img/instagram.jpg"
-            alt="Instagram Logo"
-            class="transparent-image"
+            class="sticky-top"
+            src="img/ads/test-banner.jpg"
+            alt="Test Banner"
           />
-          <p>
-            Instagram has apologised after a mistake with its algorithm promoted
-            diet content to users with eating disorders.</br> The search function in
-            the app automatically recommended terms including “appetite
-            suppressants” and “fasting” to some people.
-            <br />Eating disorder campaigners told the BBC that vulnerable
-            people could be triggered and even relapse.<br />
-            The social media platform said harmful terms have now been
-            removed.<br />
-            A spokesman for Facebook, which owns Instagram, told the BBC it was
-            a “mistake” and the issue was resolved on Monday.<br />
-            “We recently rolled out a new search functionality on Instagram
-            beyond hashtags and usernames, to help you more easily discover and
-            explore content you’re most interested in,” he added.<br />
-            “As part of this new feature, when you tap on the search bar, we’ll
-            suggest topics you may want to search for.<br />
-            “Those suggestions, as well as the search results themselves, are
-            limited to general interests, and weight loss should not have been
-            one of them."
-          </p>
-        </article>
+        </div>
+        <div class="col-md-6">
+          <section>
+            <h2 class="article-title">Instagram Fixes Mistake Promoting Harmful Diet Content</h2>
+          </section>
+          <hr />
+          <article>
+            <img
+              src="img/instagram.jpg"
+              alt="Instagram Logo"
+              class="transparent-image"
+            />
+            <p>
+              Instagram has apologised after a mistake with its algorithm promoted
+              diet content to users with eating disorders.</br> The search function in
+              the app automatically recommended terms including “appetite
+              suppressants” and “fasting” to some people.
+              <br />Eating disorder campaigners told the BBC that vulnerable
+              people could be triggered and even relapse.<br />
+              The social media platform said harmful terms have now been
+              removed.<br />
+              A spokesman for Facebook, which owns Instagram, told the BBC it was
+              a “mistake” and the issue was resolved on Monday.<br />
+              “We recently rolled out a new search functionality on Instagram
+              beyond hashtags and usernames, to help you more easily discover and
+              explore content you’re most interested in,” he added.<br />
+              “As part of this new feature, when you tap on the search bar, we’ll
+              suggest topics you may want to search for.<br />
+              “Those suggestions, as well as the search results themselves, are
+              limited to general interests, and weight loss should not have been
+              one of them."
+            </p>
+          </article>
+        </div>
+        <div class="banner col-md-3 text-center">
+          <img
+            class="sticky-top"
+            src="img/ads/test-banner.jpg"
+            alt="Test Banner"
+          />
+        </div>
       </div>
     </div>
     <!-- CONTENT -->
 
     <!-- FOOTER -->
-    <footer>
-      <ul>
-        <li>
-          <h2>Who Am I?</h2>
-          <p>
+    <footer class="bg-dimgrey">
+      <div class="container p-5">
+        <ul class="nav nav-pills nav-justified pb-3" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#home"
+              type="button"
+              role="tab"
+              aria-controls="home"
+              aria-selected="true"
+            >
+              Who Am I?
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#profile"
+              type="button"
+              role="tab"
+              aria-controls="profile"
+              aria-selected="false"
+            >
+              Contact Me
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="home"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+          >
             HI! My name is İdris Can Bölükbaşı. I'm a computer engineering
             student in Eskişehir Technical University. If you want to contact me
-            you can use my contact info on the right side.
-          </p>
-        </li>
-        <li>
-          <h2>Contact Me</h2>
-          <p><i class="fa fa-phone"></i> +90 545 906 42 73</p>
-          <p><i class="fa fa-envelope"></i> icanbolukbasi@gmail.com</p>
-        </li>
-      </ul>
+            you can use my contact info on the other tab.
+          </div>
+          <div
+            class="tab-pane fade"
+            id="profile"
+            role="tabpanel"
+            aria-labelledby="profile-tab"
+          >
+            <h2>Contact Me</h2>
+            <p><i class="fa fa-phone"></i> +90 545 906 42 73</p>
+            <p><i class="fa fa-envelope"></i> icanbolukbasi@gmail.com</p>
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- FOOTER -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
