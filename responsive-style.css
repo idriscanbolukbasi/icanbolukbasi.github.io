@@ -118,6 +118,13 @@ label.read-more-trigger:hover {
   background-color: dimgray;
   color: deepskyblue;
 }
+.link {
+  color: white;
+  text-decoration: none;
+}
+.link:hover {
+  color: deepskyblue;
+}
 
 @media only screen and (max-width: 992px) {
   .banner {

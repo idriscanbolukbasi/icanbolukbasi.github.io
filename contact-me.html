@@ -5,146 +5,317 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News Web App | Contact Me</title>
-    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="responsive-style.css" />
     <script src="https://use.fontawesome.com/8d769479d7.js"></script>
   </head>
-  <body>
+  <body class="bg-main">
     <!-- HEADER -->
-    <header>
-      <h1 id="header">NEWS WEB APP</h1>
-
-      <form
-        action="https://www.google.com/search"
-        method="get"
-        name="search"
-        target="_blank"
-      >
-        <input
-          type="search"
-          name="q"
-          placeholder="Search on Google..."
-          id="search"
-        />
-        <button type="submit" id="search-button">
-          <i class="fa fa-search"></i>
-        </button>
-      </form>
+    <header class="bg-blue">
+      <div class="container">
+        <h1 id="header">NEWS WEB APP</h1>
+      </div>
     </header>
     <!-- HEADER -->
 
     <!-- NAVIGATION -->
-    <nav>
-      <a href="index.html"><i class="fa fa-home"></i> HOME</a>
-      <a href="news.html"><i class="fa fa-newspaper-o"></i> NEWS</a>
-      <a href="sports.html"><i class="fa fa-soccer-ball-o"></i> SPORTS</a>
-      <a href="travel.html"><i class="fa fa-plane"></i> TRAVEL</a>
-      <a href="culture.html"><i class="fa fa-camera-retro"></i> CULTURE</a>
-      <div class="sub-menu">
-        <a href="more.html"> <i class="fa fa-info-circle"></i> MORE </a>
-        <ul>
-          <li>
-            <a href="about-me.html"><i class="fa fa-user"></i> About Me</a>
-          </li>
-          <li>
-            <a href="#" class="active"
-              ><i class="fa fa-envelope"></i> Contact Me</a
+    <nav class="navbar navbar-expand-lg navbar-light bg-grey">
+      <div class="container">
+        <a class="navbar-brand" href="#">News Web App</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 align-items-center">
+            <li class="nav-item">
+              <a href="#" class="nav-link"><i class="fa fa-home"></i> HOME</a>
+            </li>
+            <li class="nav-item">
+              <a href="news.html" class="nav-link"
+                ><i class="fa fa-newspaper-o"></i> NEWS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="sports.html" class="nav-link"
+                ><i class="fa fa-soccer-ball-o"></i> SPORTS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="travel.html" class="nav-link"
+                ><i class="fa fa-plane"></i> TRAVEL</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="culture.html" class="nav-link"
+                ><i class="fa fa-camera-retro"></i> CULTURE</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="active nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                More
+              </a>
+              <ul
+                class="dropdown-menu bg-grey"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="about-me.html"
+                    ><i class="fa fa-user"></i> About Me</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="active-dropdown dropdown-item"
+                    href="contact-me.html"
+                    ><i class="fa fa-phone"></i> Contact Me</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="login.html" class="nav-link"
+                ><i class="fa fa-sign-in"></i> LOGIN</a
+              >
+            </li>
+          </ul>
+          <form
+            class="d-flex"
+            action="https://www.google.com/search"
+            method="get"
+            name="search"
+            target="_blank"
+          >
+            <input
+              class="form-control"
+              type="search"
+              name="q"
+              placeholder="Search on Google..."
+              id="search"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            />
+            <button
+              type="submit"
+              class="btn btn-group-lg btn-secondary search-button"
+              id="button-addon2"
             >
-          </li>
-        </ul>
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
       </div>
-      <a href="login.html"><i class="fa fa-sign-in"></i> LOGIN</a>
     </nav>
     <!-- NAVIGATION -->
 
     <!-- CONTENT -->
-    <div class="main">
-      <div class="container">
-        <section>
-          <h2>Contact Me</h2>
-        </section>
-        <hr />
-        <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <section>
+            <h2>Contact Me</h2>
+          </section>
+          <hr />
           <form action="response.html" method="POST">
-            <label for="name">NAME: </label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Your Name..."
-              required
-              autofocus
-            />
-            <label for="surname">SURNAME: </label>
-            <input
-              type="text"
-              name="surname"
-              id="surname"
-              placeholder="Your Surname..."
-              required
-            />
-            <label for="telephone">TELEPHONE: </label>
-            <input
-              type="tel"
-              name="telephone"
-              id="telephone"
-              placeholder="05XXXXXXXXX"
-              pattern="[0-9]{11}"
-              required
-            />
-            <label for="issue">ISSUE: </label>
-            <select name="issue" id="issue">
-              <option value="complaint">Complaint</option>
-              <option value="offer">Offer</option>
-            </select>
-            <label for="message">MESSAGE: </label>
-            <textarea
-              name="message"
-              id="message"
-              cols="5"
-              rows="10"
-              style="resize: none"
-              required
-            ></textarea>
-            <input type="submit" value="Send" />
-            <a style="text-align: center; font-size: 2rem" href="index.html"
-              ><i class="fa fa-home"></i
-            ></a>
+            <div class="row p-2">
+              <div class="form-group col-md-6">
+                <label for="name">NAME: </label>
+                <input
+                  class="form-control"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Your Name..."
+                  required
+                  autofocus
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="surname">SURNAME: </label>
+                <input
+                  class="form-control"
+                  type="text"
+                  name="surname"
+                  id="surname"
+                  placeholder="Your Surname..."
+                  required
+                />
+              </div>
+            </div>
+            <div class="row p-2">
+              <div class="form-group col-md-6">
+                <label for="telephone">TELEPHONE: </label>
+                <input
+                  class="form-control"
+                  type="tel"
+                  name="telephone"
+                  id="telephone"
+                  placeholder="05XXXXXXXXX"
+                  pattern="[0-9]{11}"
+                  required
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="issue">ISSUE: </label>
+                <select class="form-select" name="issue" id="issue">
+                  <option value="complaint">Complaint</option>
+                  <option value="offer">Offer</option>
+                </select>
+              </div>
+            </div>
+            <div class="p-2">
+              <label for="message">MESSAGE: </label>
+              <textarea
+                class="form-control"
+                name="message"
+                id="message"
+                cols="5"
+                rows="10"
+                style="resize: none"
+                required
+              ></textarea>
+              <div class="row">
+                <div class="col-md-6 pt-2">
+                  <input
+                    class="btn btn-primary col-12"
+                    type="submit"
+                    value="Send"
+                  />
+                </div>
+                <div class="col-md-6 pt-2">
+                  <a class="btn btn-primary col-12" href="index.html">
+                    <i class="fa fa-home"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
           </form>
-          <p>
+        </div>
+        <div class="col-md-6">
+          <section>
+            <h2>Contact Me</h2>
+          </section>
+          <hr />
+          <p class="text-center">
             You can also contact me wiht my mail address and social media
             accounts.
-            <br />
-            <a href="mailto:icanbolukbasi@gmail.com">Mail Me</a>
-            <br />
-            <a href="https://www.instagram.com/idriscanbolukbasi/">Instagram</a>
-            <br />
-            <a href="https://www.linkedin.com/in/idriscanbolukbasi/"
-              >LinkedIn</a
-            >
           </p>
-        </article>
+          <div class="row">
+            <div class="col text-center">
+              <h3>
+                <a
+                  class="badge bg-secondary link m-2"
+                  href="mailto:icanbolukbasi@gmail.com"
+                  ><i class="fa fa-envelope"></i> Mail Me</a
+                >
+              </h3>
+            </div>
+            <div class="col text-center">
+              <h3>
+                <a
+                  class="badge bg-secondary link m-2"
+                  href="https://www.instagram.com/idriscanbolukbasi/"
+                  ><i class="fa fa-instagram"></i> Instagram</a
+                >
+              </h3>
+            </div>
+            <div class="col text-center">
+              <h3>
+                <a
+                  class="badge bg-secondary large link m-2"
+                  href="https://www.linkedin.com/in/idriscanbolukbasi/"
+                  ><i class="fa fa-linkedin"></i> LinkedIn</a
+                >
+              </h3>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- CONTENT -->
-
+    
     <!-- FOOTER -->
-    <footer>
-      <ul>
-        <li>
-          <h2>Who Am I?</h2>
-          <p>
+    <footer class="bg-dimgrey">
+      <div class="container p-5">
+        <ul class="nav nav-pills nav-justified pb-3" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#home"
+              type="button"
+              role="tab"
+              aria-controls="home"
+              aria-selected="true"
+            >
+              Who Am I?
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#profile"
+              type="button"
+              role="tab"
+              aria-controls="profile"
+              aria-selected="false"
+            >
+              Contact Me
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="home"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+          >
             HI! My name is İdris Can Bölükbaşı. I'm a computer engineering
             student in Eskişehir Technical University. If you want to contact me
-            you can use my contact info on the right side.
-          </p>
-        </li>
-        <li>
-          <h2>Contact Me</h2>
-          <p><i class="fa fa-phone"></i> +90 545 906 42 73</p>
-          <p><i class="fa fa-envelope"></i> icanbolukbasi@gmail.com</p>
-        </li>
-      </ul>
+            you can use my contact info on the other tab.
+          </div>
+          <div
+            class="tab-pane fade"
+            id="profile"
+            role="tabpanel"
+            aria-labelledby="profile-tab"
+          >
+            <h2>Contact Me</h2>
+            <p><i class="fa fa-phone"></i> +90 545 906 42 73</p>
+            <p><i class="fa fa-envelope"></i> icanbolukbasi@gmail.com</p>
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- FOOTER -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
