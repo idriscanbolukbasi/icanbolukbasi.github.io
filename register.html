@@ -5,196 +5,442 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News Web App | Contact Me</title>
-    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="responsive-style.css" />
     <script src="https://use.fontawesome.com/8d769479d7.js"></script>
   </head>
-  <body>
+  <body class="bg-main">
     <!-- HEADER -->
-    <header>
-      <h1 id="header">NEWS WEB APP</h1>
-
-      <form
-        action="https://www.google.com/search"
-        method="get"
-        name="search"
-        target="_blank"
-      >
-        <input
-          type="search"
-          name="q"
-          placeholder="Search on Google..."
-          id="search"
-        />
-        <button type="submit" id="search-button">
-          <i class="fa fa-search"></i>
-        </button>
-      </form>
+    <header class="bg-blue">
+      <div class="container">
+        <h1 id="header">NEWS WEB APP</h1>
+      </div>
     </header>
     <!-- HEADER -->
 
     <!-- NAVIGATION -->
-    <nav>
-      <a href="index.html"><i class="fa fa-home"></i> HOME</a>
-      <a href="news.html"><i class="fa fa-newspaper-o"></i> NEWS</a>
-      <a href="sports.html"><i class="fa fa-soccer-ball-o"></i> SPORTS</a>
-      <a href="travel.html"><i class="fa fa-plane"></i> TRAVEL</a>
-      <a href="culture.html"><i class="fa fa-camera-retro"></i> CULTURE</a>
-      <a href="more.html"> <i class="fa fa-info-circle"></i> MORE </a>
-      <a href="login.html"><i class="fa fa-sign-in"></i> LOGIN</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-grey">
+      <div class="container">
+        <a class="navbar-brand" href="#">News Web App</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 align-items-center">
+            <li class="nav-item">
+              <a href="#" class="nav-link"><i class="fa fa-home"></i> HOME</a>
+            </li>
+            <li class="nav-item">
+              <a href="news.html" class="nav-link"
+                ><i class="fa fa-newspaper-o"></i> NEWS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="sports.html" class="nav-link"
+                ><i class="fa fa-soccer-ball-o"></i> SPORTS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="travel.html" class="nav-link"
+                ><i class="fa fa-plane"></i> TRAVEL</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="culture.html" class="nav-link"
+                ><i class="fa fa-camera-retro"></i> CULTURE</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                More
+              </a>
+              <ul
+                class="dropdown-menu bg-grey"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="about-me.html"
+                    ><i class="fa fa-user"></i> About Me</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="contact-me.html"
+                    ><i class="fa fa-phone"></i> Contact Me</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="login.html" class="active nav-link"
+                ><i class="fa fa-sign-in"></i> LOGIN</a
+              >
+            </li>
+          </ul>
+          <form
+            class="d-flex"
+            action="https://www.google.com/search"
+            method="get"
+            name="search"
+            target="_blank"
+          >
+            <input
+              class="form-control"
+              type="search"
+              name="q"
+              placeholder="Search on Google..."
+              id="search"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            />
+            <button
+              type="submit"
+              class="btn btn-group-lg btn-secondary search-button"
+              id="button-addon2"
+            >
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
     </nav>
     <!-- NAVIGATION -->
 
     <!-- CONTENT -->
-    <div class="main">
-      <div class="container">
-        <section>
-          <h2>Register</h2>
-        </section>
-        <hr />
-        <article>
-          <form
-            action="thanks.html"
-            method="POST"
-            enctype="multipart/form-data"
-          >
-            <label for="name">NAME: </label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Your Name..."
-              required
-              autofocus
-            />
-            <label for="surname">SURNAME: </label>
-            <input
-              type="text"
-              name="surname"
-              id="surname"
-              placeholder="Your Surname..."
-              required
-            />
-            <label for="email">EMAIL: </label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Mail Address"
-              required
-              autofocus
-            />
-            <label for="birthdate">BIRTH DATE: </label>
-            <input type="date" name="birthdate" id="birthdate" />
-            <label for="telephone">TELEPHONE: </label>
-            <input
-              type="tel"
-              name="telephone"
-              id="telephone"
-              placeholder="05XXXXXXXXX"
-              pattern="[0-9]{11}"
-              required
-            />
-            <label for="password">PASSWORD: </label>
-            <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="Password"
-              required
-            />
-            <label for="">GENDER: </label>
-            <div class="radio-wrapper">
-              <div class="radio-option">
-                <label for="male">MALE</label>
-                <input type="radio" name="gender" id="male" value="male" />
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <section>
+            <h2>Register</h2>
+          </section>
+          <hr />
+          <article>
+            <form
+              action="thanks.html"
+              method="POST"
+              enctype="multipart/form-data"
+            >
+              <div class="row">
+                <div class="col-md-6 form-group p-2">
+                  <label for="name">NAME: </label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Your Name..."
+                    required
+                    autofocus
+                  />
+                </div>
+                <div class="col-md-6 form-group p-2">
+                  <label for="surname">SURNAME: </label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="surname"
+                    id="surname"
+                    placeholder="Your Surname..."
+                    required
+                  />
+                </div>
               </div>
-              <div class="radio-option">
-                <label for="female">FEMALE</label>
-                <input type="radio" name="gender" id="female" value="female" />
+              <div class="row">
+                <div class="col-md-6 form-group p-2">
+                  <label for="email">EMAIL: </label>
+                  <input
+                    class="form-control"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Mail Address"
+                    required
+                    autofocus
+                  />
+                </div>
+                <div class="col-md-6 form-group p-2">
+                  <label for="birthdate">BIRTH DATE: </label>
+                  <input
+                    type="date"
+                    name="birthdate"
+                    id="birthdate"
+                    class="form-control"
+                  />
+                </div>
               </div>
-            </div>
-            <label for="aboutme">ABOUT YOURSELF: </label>
-            <textarea
-              name="aboutme"
-              id="aboutme"
-              cols="5"
-              rows="10"
-              style="resize: none"
-              required
-            ></textarea>
-            <label for="photo">YOUR PHOTO: </label>
-            <input type="file" name="photo" id="photo" />
-            <label for="">YOUR INTERESTS: </label>
-            <div class="radio-wrapper">
-              <div class="radio-option">
-                <input type="checkbox" name="music" id="music" />
-                <label for="music">MUSIC</label>
+              <div class="row">
+                <div class="col-md-6 form-group p-2">
+                  <label for="telephone">TELEPHONE: </label>
+                  <input
+                    class="form-control"
+                    type="tel"
+                    name="telephone"
+                    id="telephone"
+                    placeholder="05XXXXXXXXX"
+                    pattern="[0-9]{11}"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 form-group p-2">
+                  <label for="password">PASSWORD: </label>
+                  <input
+                    class="form-control"
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Password"
+                    required
+                  />
+                </div>
               </div>
-              <div class="radio-option">
-                <input type="checkbox" name="economy" id="economy" />
-                <label for="economy">ECONOMY</label>
+              <div class="row">
+                <div class="col-md-6 form-check p-2">
+                  <label for="">GENDER: </label>
+                  <br />
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="male">MALE</label>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gender"
+                      id="male"
+                      value="male"
+                    />
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="female">FEMALE</label>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gender"
+                      id="female"
+                      value="female"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6 form-group p-2">
+                  <label for="photo">YOUR PHOTO: </label>
+                  <input
+                    class="form-control"
+                    type="file"
+                    name="photo"
+                    id="photo"
+                  />
+                </div>
               </div>
-              <div class="radio-option">
-                <input type="checkbox" name="sports" id="sports" />
-                <label for="sports">SPORTS</label>
+              <div class="row">
+                <div class="form-group p-2">
+                  <label for="aboutme">ABOUT YOURSELF: </label>
+                  <textarea
+                    class="form-control"
+                    name="aboutme"
+                    id="aboutme"
+                    cols="5"
+                    rows="10"
+                    style="resize: none"
+                    required
+                  ></textarea>
+                </div>
               </div>
-              <div class="radio-option">
-                <input type="checkbox" name="culture" id="culture" />
-                <label for="culture">CULTURE</label>
+              <div class="row">
+                <div class="form-group p-2">
+                  <label for="">YOUR INTERESTS: </label>
+                  <div class="row">
+                    <div class="col">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="music"
+                        id="music"
+                      />
+                      <label class="form-check-label" for="music">MUSIC</label>
+                    </div>
+                    <div class="col">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="economy"
+                        id="economy"
+                      />
+                      <label class="form-check-label" for="economy"
+                        >ECONOMY</label
+                      >
+                    </div>
+                    <div class="col">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="culture"
+                        id="culture"
+                      />
+                      <label class="form-check-label" for="culture"
+                        >CULTURE</label
+                      >
+                    </div>
+                    <div class="col">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="travel"
+                        id="travel"
+                      />
+                      <label class="form-check-label" for="travel"
+                        >TRAVEL</label
+                      >
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="science"
+                        id="science"
+                      />
+                      <label class="form-check-label" for="science"
+                        >SCIENCE</label
+                      >
+                    </div>
+                    <div class="col">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="technology"
+                        id="technology"
+                      />
+                      <label class="form-check-label" for="technology"
+                        >TECH</label
+                      >
+                    </div>
+
+                    <div class="col">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="health"
+                        id="health"
+                      />
+                      <label class="form-check-label" for="health"
+                        >HEALTH</label
+                      >
+                    </div>
+                    <div class="col">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="food"
+                        id="food"
+                      />
+                      <label class="form-check-label" for="food">FOOD</label>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="radio-option">
-                <input type="checkbox" name="travel" id="travel" />
-                <label for="travel">TRAVEL</label>
+              <div class="row">
+                <div class="col-md-6 p-2">
+                  <input
+                    class="btn btn-primary col-12"
+                    type="reset"
+                    value="Reset Values"
+                  />
+                </div>
+                <div class="col-md-6 p-2">
+                  <input
+                    class="btn btn-primary col-12"
+                    type="submit"
+                    value="Register"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="radio-wrapper">
-              <div class="radio-option">
-                <input type="checkbox" name="science" id="science" />
-                <label for="science">SCIENCE</label>
-              </div>
-              <div class="radio-option">
-                <input type="checkbox" name="technology" id="technology" />
-                <label for="technology">TECH</label>
-              </div>
-              <div class="radio-option">
-                <input type="checkbox" name="celebrities" id="celebrities" />
-                <label for="celebrities">CELEBRITIES</label>
-              </div>
-              <div class="radio-option">
-                <input type="checkbox" name="health" id="health" />
-                <label for="health">HEALTH</label>
-              </div>
-              <div class="radio-option">
-                <input type="checkbox" name="food" id="food" />
-                <label for="food">FOOD</label>
-              </div>
-            </div>
-            <input type="reset" value="Reset Values" />
-            <input type="submit" value="Register" />
-          </form>
-        </article>
+            </form>
+          </article>
+        </div>
       </div>
     </div>
     <!-- CONTENT -->
 
     <!-- FOOTER -->
-    <footer>
-      <ul>
-        <li>
-          <h2>Who Am I?</h2>
-          <p>
+    <footer class="bg-dimgrey">
+      <div class="container p-5">
+        <ul class="nav nav-pills nav-justified pb-3" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#home"
+              type="button"
+              role="tab"
+              aria-controls="home"
+              aria-selected="true"
+            >
+              Who Am I?
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#profile"
+              type="button"
+              role="tab"
+              aria-controls="profile"
+              aria-selected="false"
+            >
+              Contact Me
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="home"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+          >
             HI! My name is İdris Can Bölükbaşı. I'm a computer engineering
             student in Eskişehir Technical University. If you want to contact me
-            you can use my contact info on the right side.
-          </p>
-        </li>
-        <li>
-          <h2>Contact Me</h2>
-          <p><i class="fa fa-phone"></i> +90 545 906 42 73</p>
-          <p><i class="fa fa-envelope"></i> icanbolukbasi@gmail.com</p>
-        </li>
-      </ul>
+            you can use my contact info on the other tab.
+          </div>
+          <div
+            class="tab-pane fade"
+            id="profile"
+            role="tabpanel"
+            aria-labelledby="profile-tab"
+          >
+            <h2>Contact Me</h2>
+            <p><i class="fa fa-phone"></i> +90 545 906 42 73</p>
+            <p><i class="fa fa-envelope"></i> icanbolukbasi@gmail.com</p>
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- FOOTER -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
